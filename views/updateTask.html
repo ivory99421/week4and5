@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+
+</head>
+<br>
+<img src="images/logo.jpg" width="400px" height="300px">
+<ul>
+    <li><h1><a href="/"class="btn btn-primary">Home</a></h1></li>
+    <li><h1><a href="/listTasks"class="btn btn-primary">List Task</a></h1></li>
+    <li><h1><a href="/removeTask"class="btn btn-primary">Remove Task</a></h1></li>
+</ul>
+
+<div class="row">
+
+    <form action="/updateCurrent" method="post">
+
+        <div class="form-group">
+            <label for="taskid">Task ID</label>
+            <input class="form-control" id="taskid" name="taskid"/>
+        </div>
+
+        <div class="">
+            <label for="status">Task Status</label> </br>
+            <select class="form-control" id="status" name="status">
+                <option value="inProgress">In Progress</option>
+                <option value="complete">Complete</option>
+            </select>
+        </div>
+
+        </br><button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</body>
+</html>
