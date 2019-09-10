@@ -26,6 +26,7 @@
             <td>due</td>
             <td>status</td>
             <td>desc</td>
+            <td>Developers</td>
         </tr>
         <% for ( var i = 0; i < tasks.length; i++){ %>
         <tr>
@@ -43,6 +44,9 @@
             </td>
             <td>
                 <%= tasks[i].desc %>
+            </td>
+            <td>
+                <%= tasks[i].developer %>
             </td>
 
         </tr>

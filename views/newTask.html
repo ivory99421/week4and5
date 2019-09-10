@@ -23,8 +23,21 @@
             </div>
 
             <div class="form-group">
-                <label for="assigns">Task Assigns</label></br>
-                <input class="form-control" id="assigns" name="assigns"/>
+                <label for="assigns">Task Assigns</label>
+<!--                <input class="form-control" list="assigns" name="assigns">-->
+<!--                <datalist id="assigns">-->
+<!--                    <% for( var i=0; i < developers.length; i++){ %>-->
+<!--                    <option><%= developers[i]._id %></option>-->
+<!--                    <% } %>-->
+<!--                </datalist>-->
+<!--                </input>-->
+                <select class="form-control" id="assigns" name="assigns">
+                    <datalist id="">-->
+                    <% for( var i=0; i < developers.length; i++){ %>-->
+                                        <option><%= developers[i]._id %></option>
+                                        <% } %>
+                    </datalist>
+                </select>
             </div>
 
             <div class="form-group">

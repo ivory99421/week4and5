@@ -1,0 +1,61 @@
+<head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css"/>
+
+    </head>
+    <br>
+    <img src="images/logo.jpg" width="400px" height="300px">
+    <ul>
+    <li><h1><a href="/"class="btn btn-primary">Home</a></h1></li>
+<li><h1><a href="/listTasks"class="btn btn-primary">List Task</a></h1></li>
+<li><h1><a href="/updateTask"class="btn btn-primary">Update Task</a></h1></li>
+<li><h1><a href="/removeTask"class="btn btn-primary">Remove Task</a></h1></li>
+</ul>
+</head>
+
+<div class="container-fluid">
+    <div class="row">
+        <table class="table">
+            <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Level</th>
+            <th>State</th>
+            <th>Suburb</th>
+            <th>Street</th>
+            <th>Unit</th>
+            </thead>
+            <tbody>
+            <% for ( var i = 0; i < developers.length; i++){ %>
+            <tr>
+                <td>
+                    <%= developers[i]._id %>
+                </td>
+                <td>
+                    <%= developers[i].name.firstName %>
+                </td>
+                <td>
+                    <%= developers[i].name.surname %>
+                </td>
+                <td>
+                    <%= developers[i].level %>
+                </td>
+                <td>
+                    <%= developers[i].address.state %>
+                </td>
+                <td>
+                    <%= developers[i].address.suburb %>
+                </td>
+                <td>
+                    <%= developers[i].address.street %>
+                </td>
+                <td>
+                    <%= developers[i].address.unit %>
+                </td>
+            </tr>
+            <% }%>
+            </tbody>
+        </table>
+    </div>
+</div>>
